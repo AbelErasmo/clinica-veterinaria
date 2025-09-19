@@ -9,6 +9,8 @@
     if ($conn->connect_error) {
         die("Erro de conexão: " . $conn->connect_error);
     }
-
+    
     return $conn;
+    mysqli_set_charset($conn, 'utf8mb4');
+
 ?>

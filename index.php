@@ -23,8 +23,13 @@ require_once './config/db_connect.php';
     <h3>Explore nossa galeria de animais</h3>
     <div class="container_card">
       <?php
-        $search = $_GET['q'] ?? '';
-        (new AnimalView())->exibirAnimais(9, $search);
+        $view = new AnimalView();
+        $search = trim($_GET['q'] ?? '');
+        if($search === '') {
+            $view->exibirAnimais(9);
+        } else {
+            $view->exibirPesquisa($search, 9);
+        }
       ?>
     </div>
   </div>
