@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header {
+    padding: 1rem;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header h1 {
+    justify-content: center;
+    width: 20%;
+    color: rgb(39, 138, 9);
+}
+
+.header form {
+    width: 70%;
+}
+
+.header form input[type='search'] {
+    width: 75%;
+    padding: 8px;
+    font-size: 14pt;
+    border-radius: 1rem;
+    border: 1px solid rgb(39, 138, 9);
+}
+
+.header form button {
+    background-color: #fff;
+    border: none;
+    color: #242222;
+    width: 20%;
+    justify-content: center;
+    text-align: center;
+    margin: 4px;
+    font-size: 13pt;
+    border-radius: 1rem;
+    padding: 8px;
+}
+
+.header button:hover {
+    background-color: #242222;
+    color: #fff;
+    cursor: pointer;
+}
+
+.container {
+    margin-top: 4rem;
+}
+
+.container h3 {
+    text-align: center;
+    font-weight: 100;
+}
+
+.container_card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+
+.container_card .card {
+    margin: 2rem auto;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.8;
+    max-width: 30%;
+    padding: 1rem;
+    border-radius: 8px;
+    height: auto;
+    background-color: rgb(243, 243, 243);
+    box-shadow: 3px 2px 2px rgb(198, 196, 196);
+}
+
+.container_card .card:hover {
+    border: 1.5px solid rgb(11, 210, 104);
+    /* transition: 2s ease-in-out; */
+}
+
+.container_card .card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.container_card .card .descricao {
+    font-size: 10pt;
+}
+
+@media (max-width:768px) {
+
+    body {
+        background-color: #242222;
+        color: white;
+    }
+    
+    .header {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        align-items: center;        
+        flex-direction: column;
+        background-color: rgb(74, 93, 10);
+
+    }
+
+    .header h1 {
+        color: #fff;
+        width: 100%;
+        margin-bottom: 0.75rem;
+    }
+
+    .header input[type='search'] {
+        min-width: 100%;
+    }
+
+    .container_card {
+        flex-direction: column;
+    }
+
+    .container_card .card {
+        max-width: 100%;
+        background-color: #242222;
+        border: 1px solid #fff;
+        box-shadow: none;
+    }
+}
+
+
+
+
+
+
+
